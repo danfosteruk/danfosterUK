@@ -990,6 +990,7 @@ pre.code-block {
   .sticky-nav__links {
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
   }
 
   .contact__table td:first-child {
