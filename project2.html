@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building a Data Culture Inside L&amp;D – Dan Foster</title>
+  <meta name="description" content="How I went from Excel pivot tables to machine learning – and why the real achievement was changing how my team makes decisions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Nav -->
+  <nav class="sticky-nav">
+    <div class="container--wide">
+      <span class="sticky-nav__name"><a href="index.html">Dan Foster</a></span>
+      <div class="sticky-nav__links">
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="cs-hero">
+    <div class="container">
+      <a href="index.html#projects" class="cs-hero__back">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        Back to Projects
+      </a>
+      <h1 class="cs-hero__title fade-in">Building a Data Culture Inside L&amp;D</h1>
+      <p class="cs-hero__lead fade-in fade-in-delay-1">How I went from Excel pivot tables to machine learning – and why the real achievement was changing how my team makes decisions.</p>
+      <p class="cs-hero__date fade-in fade-in-delay-2"><strong>Date:</strong> 2022–23</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Image -->
+  <section class="cs-media">
+    <div class="container">
+      <img src="images/project2.png" alt="Building a Data Culture Inside L&amp;D" class="cs-media__image fade-in">
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Intro -->
+  <section class="cs-section">
+    <div class="container">
+      <p class="cs-section__text fade-in">Most L&amp;D teams measure learning through completion rates and post-course surveys. I wanted to know more.</p>
+      <p class="cs-section__text fade-in">Over the course of a Level 4 Data Analyst apprenticeship, I designed and delivered projects that gave my team something it had never had before: a systematic, evidence-based view of how learning was performing – and the automated tools to keep it updated.</p>
+      <p class="cs-section__text fade-in">The technical progression was real, moving from Excel dashboards through to Power BI, then Python and machine learning. But the bigger shift was cultural. By the end, my team was making decisions differently.</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- The Problem -->
+  <section class="cs-section">
+    <div class="container">
+      <h2 class="cs-section__heading fade-in">The Problem</h2>
+      <p class="cs-section__text fade-in">Learning &amp; Development teams generate enormous amounts of data – LMS interactions, user feedback, training records, survey responses. At my organisation, almost none of it was being used. Reports sat in spreadsheets. Feedback was buried in a web interface nobody checked. Decisions about which content to commission, renew, or retire were based on intuition and anecdote.</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Overview: Three Projects -->
+  <section class="cs-section">
+    <div class="container">
+      <h2 class="cs-section__heading fade-in">Overview: Three Projects, One Direction</h2>
+
+      <!-- Project 1: Supplier Usage Dashboard -->
+      <div class="cs-overview-cards fade-in">
+        <div class="cs-overview-card">
+          <p class="cs-overview-card__title">Project 1: Supplier Usage Dashboard</p>
+          <p class="cs-overview-card__subtitle">Who is using our learning content, and when?</p>
+          <p class="cs-overview-card__text">Built in Excel with Power Pivot. Revealed that promotional campaigns drove short-term spikes but not sustained engagement — directly informing a commercial contract decision.</p>
+        </div>
+      </div>
+
+      <!-- Accordion: Supplier -->
+      <div class="accordion fade-in">
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>More detail</span>
+            <svg class="accordion__trigger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="accordion__content">
+            <div class="accordion__content-inner">
+
+              <div class="accordion__step">
+                <p class="accordion__step-label">01</p>
+                <p class="accordion__step-title">The brief</p>
+                <p class="accordion__step-text">L&amp;D leadership wanted to understand who was using an external supplier's course library, and whether a promotional campaign had driven meaningful uptake. A contract renewal decision was pending.</p>
+              </div>
+
+              <div class="accordion__step">
+                <p class="accordion__step-label">02</p>
+                <p class="accordion__step-title">The approach</p>
+                <p class="accordion__step-text">I extracted user and course interaction data from the Learning Management System (LMS) and built a normalised data model in Excel using Power Pivot. I separated the organisational hierarchy into related dimension tables, joined through primary and foreign keys. A DAX expression categorised users into tenure bands, comparing engagement across employees who were 0–3 months, 3–12 months, 1–3 years, and 3+ years in role.</p>
+                <p class="accordion__step-text">I built the interactive dashboard using Pivot Charts and Slicers, designed around the domain context of L&amp;D stakeholders – with activity categories aggregated into seven audience-relevant groups rather than the fourteen raw categories in the source data.</p>
+              </div>
+
+              <div class="accordion__step">
+                <p class="accordion__step-label">03</p>
+                <p class="accordion__step-title">Key findings</p>
+                <p class="accordion__step-text">Across 280,000 LMS interactions, compulsory content accounted for 69% of all activity. Courses from our external supplier represented less than 2%. In the 28 days following a promotional campaign designed to boost engagement, the five promoted courses saw a 584% uplift on the previous quarter's monthly average – seemingly impressive results.</p>
+                <p class="accordion__step-text">However, the data showed this spike was not sustained. Subsequent engagement was largely driven by compulsory onboarding programmes, not voluntary uptake. The promotion had generated a short-term spike, not a behaviour change. Subsequently, my organisation did not renew the contract with this supplier.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: LMS Ratings -->
+      <div class="cs-overview-cards fade-in">
+        <div class="cs-overview-card">
+          <p class="cs-overview-card__title">Project 2: Learning Management System Ratings</p>
+          <p class="cs-overview-card__subtitle">What do learners actually think?</p>
+          <p class="cs-overview-card__text">Built in Power BI with full end-to-end automation via Power Automate. Turned a feedback system nobody was reading into a weekly, self-updating intelligence tool.</p>
+        </div>
+      </div>
+
+      <!-- Accordion: Ratings -->
+      <div class="accordion fade-in">
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>More detail</span>
+            <svg class="accordion__trigger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="accordion__content">
+            <div class="accordion__content-inner">
+
+              <div class="accordion__step">
+                <p class="accordion__step-label">01</p>
+                <p class="accordion__step-title">The brief</p>
+                <p class="accordion__step-text">Learner ratings and comments on our Learning Management System were only accessible through a clunky web interface, meaning poor-performing content could go unnoticed for months. I took on the challenge of making that feedback visible and actionable.</p>
+              </div>
+
+              <div class="accordion__step">
+                <p class="accordion__step-label">02</p>
+                <p class="accordion__step-title">The approach</p>
+                <p class="accordion__step-text">I designed a multi-page Power BI dashboard drawing on two data sources: a Ratings and Comments report and a User report. I transformed and joined the datasets using Power Query (M language). Rather than storing data in multiple normalised tables, I merged the queries into a single clean table — removing the only remaining PII field (username/employee ID) in the process.</p>
+                <p class="accordion__step-text">I researched WCAG 2.0 accessibility guidelines and applied them throughout: avoiding red/green combinations, ensuring colour contrast ratios met standards, and choosing suitable charts to convey data. The dashboard was designed to support weekly stakeholder review cycles.</p>
+              </div>
+
+              <div class="accordion__step">
+                <p class="accordion__step-label">03</p>
+                <p class="accordion__step-title">The automation</p>
+                <p class="accordion__step-text">The full ETL pipeline was automated in three stages:</p>
+                <p class="accordion__step-text">1. The LMS was configured to email CSV reports every Monday at 5am.<br>2. A Power Automate flow saved email attachments to the cloud, overwriting the existing data source.<br>3. Power BI was set to auto-refresh at 7am each Monday.</p>
+                <p class="accordion__step-text">No manual intervention required, every week.</p>
+                <p class="accordion__step-text"><strong>Technical highlight: the Adjusted Days calculation</strong></p>
+                <p class="accordion__step-text">A standard "days since rating" filter would have shown different results depending on which day of the week a stakeholder opened the dashboard. I built a DAX calculated column using the WEEKDAY function to always anchor the 7-day window to the previous Monday – ensuring consistent results regardless of when the dashboard was viewed.</p>
+                <pre class="code-block">Adjusted Days = DATEDIFF([Rating Date], TODAY() - WEEKDAY(TODAY(),3), DAY)</pre>
+              </div>
+
+              <div class="accordion__step">
+                <p class="accordion__step-label">04</p>
+                <p class="accordion__step-title">Key findings</p>
+                <p class="accordion__step-text">5,448 ratings submitted, 760 comments, average rating 4.2/5. The three highest-rated activities were all completed during new joiner onboarding – raising a hypothesis about whether newer employees rate more positively.</p>
+                <p class="accordion__step-text">Within weeks, the dashboard identified a course with an average score of 1.3/5 after 25+ responses, just days after launch. Verbatim comments identified three specific pain points, which were shared with the supplier. An updated course was promptly released – this proved the catalyst for another portfolio project: <a href="project1.html">Regulatory Remedy.</a></p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: ILT Ratings -->
+      <div class="cs-overview-cards fade-in">
+        <div class="cs-overview-card">
+          <p class="cs-overview-card__title">Project 3: ILT Ratings – Does quality of materials predict learner confidence?</p>
+          <p class="cs-overview-card__subtitle">What actually drives learning effectiveness?</p>
+          <p class="cs-overview-card__text">Built in Python with Jupyter Notebooks, Pandas, and scikit-learn. Used linear regression and statistical hypothesis testing to find a measurable link between training material quality and learner confidence.</p>
+        </div>
+      </div>
+
+      <!-- Accordion: ILT -->
+      <div class="accordion fade-in">
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>More detail</span>
+            <svg class="accordion__trigger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="accordion__content">
+            <div class="accordion__content-inner">
+
+              <div class="accordion__step">
+                <p class="accordion__step-label">01</p>
+                <p class="accordion__step-title">The brief</p>
+                <p class="accordion__step-text">With less than a week's notice, I was asked to "present some data" on instructor-led training (ILT). I used the time to conduct a proper statistical analysis – and to make a strategic argument for better evaluation data.</p>
+              </div>
+
+              <div class="accordion__step">
+                <p class="accordion__step-label">02</p>
+                <p class="accordion__step-title">The approach</p>
+                <p class="accordion__step-text">Coding in Python, I loaded 1,852 learner feedback records into a Pandas DataFrame in Jupyter Notebooks. Each record contained ratings from 0–5 for Confidence (in applying the learning), Delivery (trainer quality), and Materials quality.</p>
+                <p class="accordion__step-text">After removing Personally Identifiable Information (PII) and cleaning the data, I aggregated records by training group – each group representing one instance of training, delivered by one trainer, to one cohort. Groups with fewer than 5 responses were excluded, leaving 131 aggregated records.</p>
+              </div>
+
+              <div class="accordion__step">
+                <p class="accordion__step-label">03</p>
+                <p class="accordion__step-title">The technical bit</p>
+                <p class="accordion__step-text"><strong>Exploratory analysis</strong><br>A Seaborn pairplot visually revealed two things immediately: a large cluster of 5/5 Delivery ratings regardless of other scores, and an apparent positive correlation between Confidence and Materials that warranted further investigation.</p>
+                <p class="accordion__step-text"><strong>Normality and correlation testing</strong><br>I tested whether Confidence ratings were normally distributed using D'Agostino's K² test at the 5% significance level. The test confirmed the data was not normally distributed. This justified using Spearman's Rank Correlation Coefficient, which confirmed a strong positive correlation (0.71) between Materials and Confidence ratings.</p>
+                <p class="accordion__step-text"><strong>Regression</strong><br>Using scikit-learn's LinearRegression, I modelled Confidence as a function of Materials:</p>
+                <p class="accordion__step-text">Intercept: 1.49 (predicted confidence at Materials = 0)<br>Coefficient: 0.61 (for every +1 in Materials rating, Confidence increases by 0.61)<br>R²: 0.33 (Materials explains ~33% of variance in Confidence)<br>RMSE: 0.26 | MAE: 0.21</p>
+                <p class="accordion__step-text">Model validated using an 80/20 train/test split: Training Score 0.313, Testing Score 0.375 – close enough to confirm the model was not overfitting.</p>
+              </div>
+
+              <div class="accordion__step">
+                <p class="accordion__step-label">04</p>
+                <p class="accordion__step-title">The strategic point</p>
+                <p class="accordion__step-text">I presented the results, which demonstrated a strong link between quality of training materials and learner confidence, while illustrating the potential bias within the Delivery (trainer quality) ratings.</p>
+                <p class="accordion__step-text">But I presented the model's limitations honestly: subjective end-of-session ratings have limited bearing on real-world performance. The analysis was always of limited value – and I said so.</p>
+                <p class="accordion__step-text">The greater goal was to demonstrate what better data could tell us, and to secure stakeholder commitment to linking training records with operational performance metrics. That commitment was achieved in the meeting, and led to my final End Point Assessment project – <a href="project3.html">Does Our Training Actually Work?</a></p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Outcome -->
+  <section class="cs-section">
+    <div class="container">
+      <h2 class="cs-section__heading fade-in">The Outcome</h2>
+      <p class="cs-section__text fade-in">By the end of these three projects, my L&amp;D team had:</p>
+      <ul class="cs-impact-list">
+        <li class="fade-in">A live, self-updating dashboard surfacing learner feedback every week – without manual intervention.</li>
+        <li class="fade-in">Evidence that a supplier's content wasn't delivering ROI, leading to a contract not being renewed.</li>
+        <li class="fade-in">A process for identifying and acting on poor-performing courses within days, not months.</li>
+        <li class="fade-in">A statistical baseline for measuring the impact of training material quality on learner outcomes.</li>
+        <li class="fade-in">A leadership team aligned around investing in performance data for the first time.</li>
+      </ul>
+      <p class="cs-section__text fade-in">And a proof of concept: that end-to-end data automation was possible within our existing tech stack.</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Testimonials -->
+  <section class="cs-section">
+    <div class="container">
+      <h2 class="cs-section__heading fade-in">Testimonials</h2>
+
+      <div class="cs-testimonial fade-in">
+        <p class="cs-testimonial__quote">"Dan's really focused on user experience and the way we can now access information so quickly illustrates what a great tool it is… it's already proved useful in identifying problematic content and getting feedback to a supplier in record time."</p>
+        <p class="cs-testimonial__author">– Mike Smith, Learning Operations Manager</p>
+      </div>
+
+      <div class="cs-testimonial fade-in">
+        <p class="cs-testimonial__quote">"This is amazing. This is probably the biggest demonstration of organisational impact we've been able to show."</p>
+        <p class="cs-testimonial__author">– Lyndsay Taylor, Head of Learning &amp; Development</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Tools -->
+  <section class="cs-section">
+    <div class="container">
+      <h2 class="cs-section__heading fade-in">Tools and technology</h2>
+      <ul class="cs-tech-list fade-in">
+        <li>Data Analysis, Automation, Data Storytelling</li>
+        <li>Excel, Power BI, Python</li>
+        <li>Power Automate</li>
+        <li>Workday Learn, SumTotal</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Home link -->
+  <div class="cs-home-link">
+    <a href="index.html">Home</a>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p class="site-footer__copy">Copyright &copy; 2026 Daniel Foster</p>
+    <nav class="social-links">
+      <a href="mailto:hello@danfoster.uk" aria-label="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        Email
+      </a>
+      <a href="https://linkedin.com/in/dan-foster-316399127" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://youtube.com/@danfosteruk?si=FIjwoGnDLgP74eT_" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        YouTube
+      </a>
+    </nav>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
