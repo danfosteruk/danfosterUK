@@ -4,7 +4,9 @@
    ============================================ */
 
 /* --- Reset & Base --- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,7 +18,11 @@ html {
 }
 
 body {
-  font-family: 'Source Sans 3', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family:
+    "Poppins",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
   color: #1a1a1a;
   background: #ffffff;
   line-height: 1.65;
@@ -29,7 +35,8 @@ a {
   text-decoration: none;
 }
 
-img, video {
+img,
+video {
   max-width: 100%;
   height: auto;
   display: block;
@@ -39,12 +46,13 @@ ul {
   list-style: none;
 }
 
-
 /* --- Scroll Animations --- */
 .fade-in {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
 }
 
 .fade-in.visible {
@@ -52,11 +60,18 @@ ul {
   transform: translateY(0);
 }
 
-.fade-in-delay-1 { transition-delay: 0.1s; }
-.fade-in-delay-2 { transition-delay: 0.2s; }
-.fade-in-delay-3 { transition-delay: 0.3s; }
-.fade-in-delay-4 { transition-delay: 0.4s; }
-
+.fade-in-delay-1 {
+  transition-delay: 0.1s;
+}
+.fade-in-delay-2 {
+  transition-delay: 0.2s;
+}
+.fade-in-delay-3 {
+  transition-delay: 0.3s;
+}
+.fade-in-delay-4 {
+  transition-delay: 0.4s;
+}
 
 /* --- Layout --- */
 .container {
@@ -75,7 +90,6 @@ section {
   padding: 4rem 0;
 }
 
-
 /* --- Dividers --- */
 .divider {
   border: none;
@@ -87,7 +101,6 @@ section {
   border-top-width: 2px;
   border-color: #1a1a1a;
 }
-
 
 /* --- Header / Top Bar --- */
 .site-header {
@@ -138,7 +151,6 @@ section {
   flex-shrink: 0;
 }
 
-
 /* --- Hero --- */
 .hero {
   text-align: center;
@@ -169,7 +181,6 @@ section {
   color: #444;
 }
 
-
 /* --- Nav Links (main page) --- */
 .nav-links {
   display: flex;
@@ -190,7 +201,7 @@ section {
 }
 
 .nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -3px;
   left: 0;
@@ -203,7 +214,6 @@ section {
 .nav-links a:hover::after {
   width: 100%;
 }
-
 
 /* --- Sticky Nav (case study pages) --- */
 .sticky-nav {
@@ -255,7 +265,6 @@ section {
   opacity: 0.6;
 }
 
-
 /* --- Section Headings --- */
 .section-heading {
   font-size: 2rem;
@@ -263,7 +272,6 @@ section {
   margin-bottom: 1.2rem;
   letter-spacing: -0.01em;
 }
-
 
 /* --- Projects Grid --- */
 .projects {
@@ -300,7 +308,7 @@ section {
 }
 
 .project-card__media--video::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -356,7 +364,7 @@ section {
 }
 
 .project-card__tech li::before {
-  content: '•';
+  content: "•";
   position: absolute;
   left: 0;
 }
@@ -370,14 +378,15 @@ section {
   border: 2px solid #1a1a1a;
   padding: 0.55rem 1.6rem;
   border-radius: 3px;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
 .project-card__link:hover {
   background: #1a1a1a;
   color: #fff;
 }
-
 
 /* --- Skills --- */
 .skills {
@@ -407,7 +416,7 @@ section {
 }
 
 .skills__list li::before {
-  content: '•';
+  content: "•";
   position: absolute;
   left: 0;
   color: #1a1a1a;
@@ -417,7 +426,6 @@ section {
 .skills__list li strong {
   color: #1a1a1a;
 }
-
 
 /* --- Experience --- */
 .experience {
@@ -465,7 +473,7 @@ section {
 }
 
 .experience__highlights li::before {
-  content: '•';
+  content: "•";
   position: absolute;
   left: 0;
   color: #1a1a1a;
@@ -487,7 +495,9 @@ section {
   border: 2px solid #1a1a1a;
   padding: 0.55rem 1.6rem;
   border-radius: 3px;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
   display: inline-block;
 }
 
@@ -495,7 +505,6 @@ section {
   background: #1a1a1a;
   color: #fff;
 }
-
 
 /* --- Contact --- */
 .contact {
@@ -531,7 +540,6 @@ section {
   opacity: 0.6;
 }
 
-
 /* --- Footer --- */
 .site-footer {
   padding: 2rem 0;
@@ -547,7 +555,6 @@ section {
 .site-footer .social-links {
   justify-content: center;
 }
-
 
 /* ============================================
    CASE STUDY PAGES
@@ -605,7 +612,6 @@ section {
   color: #888;
 }
 
-
 /* --- Case Study Media --- */
 .cs-media {
   padding: 2rem 0;
@@ -636,7 +642,6 @@ section {
   border: 0;
 }
 
-
 /* --- Case Study Content --- */
 .cs-section {
   padding: 2rem 0;
@@ -664,7 +669,6 @@ section {
   color: #1a1a1a;
 }
 
-
 /* --- Impact / Outcome List --- */
 .cs-impact-list {
   display: flex;
@@ -681,7 +685,7 @@ section {
 }
 
 .cs-impact-list li::before {
-  content: '•';
+  content: "•";
   position: absolute;
   left: 0;
   color: #1a1a1a;
@@ -691,7 +695,6 @@ section {
 .cs-impact-list li strong {
   color: #1a1a1a;
 }
-
 
 /* --- Testimonials --- */
 .cs-testimonial {
@@ -714,7 +717,6 @@ section {
   font-weight: 600;
 }
 
-
 /* --- Tech List (case study) --- */
 .cs-tech-list {
   display: flex;
@@ -730,11 +732,10 @@ section {
 }
 
 .cs-tech-list li::before {
-  content: '•';
+  content: "•";
   position: absolute;
   left: 0;
 }
-
 
 /* --- Accordion (Project 2) --- */
 .accordion {
@@ -826,7 +827,7 @@ section {
 }
 
 .accordion__step-text code {
-  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-family: "SF Mono", "Fira Code", "Consolas", monospace;
   font-size: 0.82rem;
   background: #f4f4f4;
   padding: 0.15rem 0.4rem;
@@ -849,7 +850,7 @@ pre.code-block {
   color: #e0e0e0;
   padding: 1rem 1.2rem;
   border-radius: 4px;
-  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-family: "SF Mono", "Fira Code", "Consolas", monospace;
   font-size: 0.8rem;
   overflow-x: auto;
   margin: 0.8rem 0;
@@ -890,7 +891,6 @@ pre.code-block {
   line-height: 1.65;
 }
 
-
 /* --- Home Link (bottom of case study) --- */
 .cs-home-link {
   text-align: center;
@@ -906,14 +906,15 @@ pre.code-block {
   padding: 0.55rem 1.6rem;
   border-radius: 3px;
   display: inline-block;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
 .cs-home-link a:hover {
   background: #1a1a1a;
   color: #fff;
 }
-
 
 /* ============================================
    RESPONSIVE
