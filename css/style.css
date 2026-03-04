@@ -261,6 +261,7 @@ section {
   display: flex;
   gap: 1.6rem;
   align-items: center;
+  justify-content: center;
 }
 
 .sticky-nav__links a {
