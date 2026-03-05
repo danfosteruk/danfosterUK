@@ -14,7 +14,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
@@ -118,7 +118,7 @@ section {
 .site-header__home {
   display: flex;
   align-items: center;
-  color: #1a1a1a;
+  color: #2ba84a;
   transition: opacity 0.2s ease;
 }
 
@@ -143,7 +143,7 @@ section {
   gap: 0.35rem;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #2ba84a;
   transition: opacity 0.2s ease;
 }
 
@@ -152,8 +152,8 @@ section {
 }
 
 .social-links svg {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   flex-shrink: 0;
 }
 
@@ -161,11 +161,13 @@ section {
 .hero {
   text-align: center;
   padding: 5rem 0 3rem;
+  back: #2ba84a;
 }
 
 .hero__title {
   font-size: 3.2rem;
-  font-weight: 900;
+  font-weight: 800;
+  color: #1a1a1a;
   line-height: 1.1;
   letter-spacing: -0.02em;
   margin-bottom: 0.2rem;
@@ -173,8 +175,8 @@ section {
 
 .hero__subtitle {
   font-size: 1.6rem;
-  font-weight: 300;
-  color: #555;
+  font-weight: 800;
+  color: #2ba84a;
   margin-bottom: 1.8rem;
   letter-spacing: 0.01em;
 }
@@ -197,7 +199,7 @@ section {
 }
 
 .nav-links a {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -213,7 +215,7 @@ section {
   left: 0;
   width: 0;
   height: 2px;
-  background: #1a1a1a;
+  background: #2ba84a;
   transition: width 0.25s ease;
 }
 
@@ -249,7 +251,7 @@ section {
 }
 
 .sticky-nav__home:hover {
-  opacity: 0.6;
+  color: #2ba84a;
 }
 
 .sticky-nav__home svg {
@@ -273,7 +275,7 @@ section {
 }
 
 .sticky-nav__links a:hover {
-  opacity: 0.6;
+  color: #2ba84a;
 }
 
 /* --- Section Headings --- */
@@ -310,6 +312,7 @@ section {
 .project-card__media img {
   width: 100%;
   height: 100%;
+  margin-bottom: 1.4rem;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
@@ -347,15 +350,19 @@ section {
   letter-spacing: -0.01em;
 }
 
+.project-card__title:hover {
+  color: #2ba84a;
+}
+
 .project-card__desc {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #444;
   margin-bottom: 0.6rem;
   line-height: 1.65;
 }
 
 .project-card__date {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #888;
   margin-bottom: 0.8rem;
 }
@@ -368,7 +375,7 @@ section {
 }
 
 .project-card__tech li {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #555;
   padding-left: 1em;
   position: relative;
@@ -386,7 +393,7 @@ section {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  border: 2px solid #1a1a1a;
+  border: 2px solid #2ba84a;
   padding: 0.55rem 1.6rem;
   border-radius: 3px;
   transition:
@@ -395,7 +402,7 @@ section {
 }
 
 .project-card__link:hover {
-  background: #1a1a1a;
+  background: #2ba84a;
   color: #fff;
 }
 
@@ -503,7 +510,7 @@ section {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  border: 2px solid #1a1a1a;
+  border: 2px solid #2ba84a;
   padding: 0.55rem 1.6rem;
   border-radius: 3px;
   transition:
@@ -513,7 +520,7 @@ section {
 }
 
 .experience__cta a:hover {
-  background: #1a1a1a;
+  background: #2ba84a;
   color: #fff;
 }
 
@@ -620,7 +627,7 @@ section {
 
 .cs-hero__date {
   font-size: 0.85rem;
-  color: #888;
+  color: #555;
 }
 
 /* --- Case Study Media --- */
@@ -913,7 +920,7 @@ pre.code-block {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  border: 2px solid #1a1a1a;
+  border: 2px solid #2ba84a;
   padding: 0.55rem 1.6rem;
   border-radius: 3px;
   display: inline-block;
@@ -923,7 +930,7 @@ pre.code-block {
 }
 
 .cs-home-link a:hover {
-  background: #1a1a1a;
+  background: #2ba84a;
   color: #fff;
 }
 
@@ -959,7 +966,6 @@ pre.code-block {
   .sticky-nav__links a {
     font-size: 0.68rem;
   }
-
 }
 
 @media (max-width: 480px) {
