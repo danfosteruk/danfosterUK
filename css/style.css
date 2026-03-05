@@ -946,10 +946,12 @@ pre.code-block {
 @media (max-width: 768px) {
   .hero__title {
     font-size: 2.2rem;
+    margin-bottom: 0.2em;
   }
 
   .hero__subtitle {
-    font-size: 1.2rem;
+    font-size: 2rem;
+    line-height: 120%;
   }
 
   .nav-links {
@@ -979,7 +981,7 @@ pre.code-block {
   }
 
   .hero__subtitle {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 
   .nav-links {
