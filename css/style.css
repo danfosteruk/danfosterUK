@@ -93,7 +93,7 @@ section {
 /* --- Dividers --- */
 .divider {
   border: none;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #ddd;
   margin: 0;
 }
 
@@ -159,7 +159,7 @@ section {
 
 /* --- Hero --- */
 .hero {
-  text-align: center;
+  text-align: left;
   padding: 5rem 0 3rem;
 }
 
@@ -169,30 +169,29 @@ section {
   color: #1a1a1a;
   line-height: 1.1;
   letter-spacing: -0.02em;
-  margin-bottom: 0.2rem;
+  margin-bottom: -0.2rem;
 }
 
 .hero__subtitle {
-  font-size: 1.6rem;
+  font-size: 2.8rem;
   font-weight: 800;
   color: #2ba84a;
-  margin-bottom: 1.8rem;
-  letter-spacing: 0.01em;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
 }
 
 .hero__tagline {
   font-size: 1rem;
   line-height: 1.7;
-  max-width: 600px;
   margin: 0 auto;
-  color: #444;
+  color: #1a1a1a;
 }
 
 /* --- Nav Links (main page) --- */
 .nav-links {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
   padding: 2rem 0;
   flex-wrap: wrap;
 }
@@ -291,7 +290,8 @@ section {
 
 /* --- Projects Grid --- */
 .projects {
-  padding: 3rem 0;
+  padding: 6rem 0;
+  background-color: #faf8f8;
 }
 
 .project-card {
@@ -351,6 +351,7 @@ section {
   font-weight: 800;
   margin-bottom: 0.6rem;
   letter-spacing: -0.01em;
+  transition: color 0.2s ease;
 }
 
 .project-card__title:hover {
@@ -451,6 +452,7 @@ section {
 /* --- Experience --- */
 .experience {
   padding: 3rem 0;
+  background-color: #faf8f8;
 }
 
 .experience__meta {
@@ -513,7 +515,7 @@ section {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  border: 2px solid #2ba84a;
+  border: 2px solid #21823a;
   padding: 0.55rem 1.6rem;
   border-radius: 3px;
   transition:
