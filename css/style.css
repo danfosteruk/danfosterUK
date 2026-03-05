@@ -610,7 +610,7 @@ section {
 
 .cs-hero__title {
   font-size: 2.4rem;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1.15;
   letter-spacing: -0.02em;
   margin-bottom: 0.5rem;
@@ -721,7 +721,7 @@ section {
 
 /* --- Testimonials --- */
 .cs-testimonial {
-  border-left: 3px solid #1a1a1a;
+  border-left: 3px solid #21823a;
   padding-left: 1.5rem;
   margin: 1.5rem 0;
 }
@@ -778,7 +778,7 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.2rem;
-  background: #fafafa;
+  background: #fff;
   border: none;
   cursor: pointer;
   font-family: inherit;
@@ -827,7 +827,7 @@ section {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #888;
+  color: #21823a;
   margin-bottom: 0.3rem;
 }
 
@@ -842,6 +842,15 @@ section {
   font-size: 0.9rem;
   color: #555;
   line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+.accordion__step-text-tech-highlight {
+  font-size: 0.9rem;
+  color: #444;
+  border-left: 3px solid #21823a;
+  padding-left: 0.5rem;
+  line-height: 1.7;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -869,8 +878,8 @@ section {
 }
 
 pre.code-block {
-  background: #1a1a1a;
-  color: #e0e0e0;
+  background: #ddd;
+  color: #1a1a1a;
   padding: 1rem 1.2rem;
   border-radius: 4px;
   font-family: "SF Mono", "Fira Code", "Consolas", monospace;
@@ -890,9 +899,9 @@ pre.code-block {
 
 .cs-overview-card {
   padding: 1.2rem 1.4rem;
-  background: #fafafa;
+  background: #faf8f8;
   border-radius: 6px;
-  border-left: 3px solid #1a1a1a;
+  border-left: 3px solid #21823a;
 }
 
 .cs-overview-card__title {
