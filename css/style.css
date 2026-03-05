@@ -457,7 +457,7 @@ section {
 
 .experience__meta {
   font-size: 0.85rem;
-  color: #888;
+  color: #666;
   font-style: italic;
   margin-bottom: 0.3rem;
 }
@@ -707,6 +707,10 @@ section {
   position: relative;
 }
 
+.cs-impact-list li:last-child {
+  margin-bottom: 1rem;
+}
+
 .cs-impact-list li::before {
   content: "•";
   position: absolute;
@@ -912,7 +916,7 @@ pre.code-block {
 
 .cs-overview-card__subtitle {
   font-size: 0.85rem;
-  color: #888;
+  color: #666;
   font-style: italic;
   margin-bottom: 0.6rem;
 }
