@@ -955,6 +955,55 @@ pre.code-block {
   html {
     font-size: 17px;
   }
+  .hero__title {
+    font-size: 2.2rem;
+    margin-bottom: 0.2em;
+  }
+
+  .hero__subtitle {
+    font-size: 2rem;
+    line-height: 120%;
+  }
+
+  .nav-links {
+    gap: 1.2rem;
+  }
+
+  .cs-hero__title {
+    font-size: 1.8rem;
+  }
+
+  .section-heading {
+    font-size: 1.6rem;
+  }
+
+  .cs-hero__subtitle {
+    font-size: 1.05rem;
+  }
+
+  .cs-section__heading {
+    font-size: 1.05rem;
+  }
+
+  .cs-section__text {
+    font-size: 0.9rem;
+  }
+
+  .cs-impact-list li {
+    font-size: 0.9rem;
+  }
+
+  .project-card__desc {
+    font-size: 0.9rem;
+  }
+
+  .sticky-nav__links {
+    gap: 0.8rem;
+  }
+
+  .sticky-nav__links a {
+    font-size: 0.68rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1022,7 +1071,7 @@ pre.code-block {
   }
 
   .hero__subtitle {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   .nav-links {
