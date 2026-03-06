@@ -999,6 +999,10 @@ pre.code-block {
     font-size: 0.9rem;
   }
 
+  .project-card__desc {
+    font-size: 0.9rem;
+  }
+
   .sticky-nav__links {
     gap: 0.8rem;
   }
