@@ -1061,6 +1061,48 @@ pre.code-block {
   }
 }
 
+@media (max-height: 500px) and (orientation: landscape) {
+  html {
+    font-size: 16px;
+  }
+
+  .project-card__desc {
+    font-size: 0.85rem;
+  }
+
+  .cs-section__text {
+    font-size: 0.85rem;
+  }
+
+  .cs-hero__title {
+    font-size: 1.6rem;
+  }
+
+  .cs-hero__subtitle {
+    font-size: 1rem;
+  }
+
+  .cs-hero__lead {
+    font-size: 0.9rem;
+  }
+
+  .cs-section__heading {
+    font-size: 1rem;
+  }
+
+  .cs-impact-list li {
+    font-size: 0.85rem;
+  }
+
+  .cs-testimonial__quote {
+    font-size: 0.85rem;
+  }
+
+  .cs-overview-card__text {
+    font-size: 0.85rem;
+  }
+}
+
 @media (max-width: 480px) {
   html {
     font-size: 16px;
