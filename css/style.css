@@ -185,7 +185,7 @@ section {
   font-size: var(--font-size-hero);
   font-weight: 800;
   color: #1a1a1a;
-  line-height: 1.1;
+  line-height: 1.5;
   letter-spacing: -0.02em;
   margin-bottom: -0.2rem;
 }
@@ -194,6 +194,7 @@ section {
   font-size: var(--font-size-hero-sub);
   font-weight: 800;
   color: #2ba84a;
+  line-height: 1.2;
   margin-bottom: 1rem;
   letter-spacing: -0.02em;
 }
