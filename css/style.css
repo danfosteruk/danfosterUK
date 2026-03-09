@@ -16,23 +16,23 @@ html {
 
 :root {
   /* Display / Hero */
-  --font-size-hero:       clamp(1.5rem, 1.1rem + 1.74vw, 3.2rem);
-  --font-size-hero-sub:   clamp(1.375rem, 1.04rem + 1.46vw, 2.8rem);
-  --font-size-h1:         clamp(1.375rem, 1.08rem + 1.28vw, 2.4rem);
+  --font-size-hero: clamp(1.5rem, 1.1rem + 1.74vw, 3.6rem);
+  --font-size-hero-sub: clamp(1.375rem, 1.04rem + 1.46vw, 3rem);
+  --font-size-h1: clamp(1.375rem, 1.08rem + 1.28vw, 2.4rem);
 
   /* Headings */
-  --font-size-h2:         clamp(1.25rem, 1.02rem + 1.0vw, 2rem);
-  --font-size-h3:         clamp(1.125rem, 0.98rem + 0.63vw, 1.5rem);
-  --font-size-h4:         clamp(1rem, 0.94rem + 0.28vw, 1.15rem);
+  --font-size-h2: clamp(1.25rem, 1.02rem + 1vw, 2rem);
+  --font-size-h3: clamp(1.125rem, 0.98rem + 0.63vw, 1.5rem);
+  --font-size-h4: clamp(1rem, 0.94rem + 0.28vw, 1.15rem);
 
   /* Body */
-  --font-size-base:       clamp(0.938rem, 0.875rem + 0.28vw, 1rem);
-  --font-size-body:       clamp(0.85rem, 0.82rem + 0.13vw, 0.95rem);
-  --font-size-body-sm:    clamp(0.813rem, 0.78rem + 0.14vw, 0.9rem);
+  --font-size-base: clamp(0.938rem, 0.875rem + 0.28vw, 1rem);
+  --font-size-body: clamp(0.85rem, 0.82rem + 0.13vw, 0.95rem);
+  --font-size-body-sm: clamp(0.813rem, 0.78rem + 0.14vw, 0.9rem);
 
   /* Small / UI */
-  --font-size-sm:         clamp(0.813rem, 0.77rem + 0.19vw, 0.85rem);
-  --font-size-xs:         clamp(0.75rem, 0.72rem + 0.13vw, 0.8rem);
+  --font-size-sm: clamp(0.813rem, 0.77rem + 0.19vw, 0.85rem);
+  --font-size-xs: clamp(0.75rem, 0.72rem + 0.13vw, 0.8rem);
 }
 
 body {
