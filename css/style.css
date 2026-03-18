@@ -33,6 +33,7 @@ html {
   /* Small / UI */
   --font-size-sm: clamp(0.813rem, 0.77rem + 0.19vw, 0.85rem);
   --font-size-xs: clamp(0.75rem, 0.72rem + 0.13vw, 0.8rem);
+  --font-size-caption: 0.7rem;
 }
 
 body {
@@ -738,7 +739,7 @@ section {
 }
 
 .cs-inline-media__caption {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-caption);
   color: #888;
   margin-top: 0.5rem;
   line-height: 1.4;
