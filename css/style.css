@@ -738,7 +738,7 @@ section {
 }
 
 .cs-inline-media__caption {
-  font-size: var(--font-size-ui);
+  font-size: var(--font-size-xs);
   color: #888;
   margin-top: 0.5rem;
   line-height: 1.4;
