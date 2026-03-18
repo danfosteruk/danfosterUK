@@ -99,12 +99,25 @@
           before: a systematic, evidence-based view of how learning was
           performing &ndash; and the automated tools to keep it updated.
         </p>
-        <p class="cs-section__text fade-in">
-          The technical progression was real, moving from Excel dashboards
-          through to Power BI, then Python and machine learning. But the bigger
-          shift was cultural. By the end, my team was making decisions
-          differently.
-        </p>
+        <div class="cs-inline-media fade-in">
+          <p class="cs-section__text cs-inline-media__text">
+            The technical progression was real, moving from Excel dashboards
+            through to Power BI, then Python and machine learning. But the bigger
+            shift was cultural. By the end, my team was making decisions
+            differently.
+          </p>
+          <figure class="cs-inline-media__figure">
+            <img
+              class="cs-inline-media__image"
+              src="images/ilt_rating_pairplot.png"
+              alt="ILT rating pairplot"
+              loading="lazy"
+            />
+            <figcaption class="cs-inline-media__caption">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -641,6 +654,11 @@ Adjusted Days = DATEDIFF([Rating Date], TODAY() - WEEKDAY(TODAY(),3), DAY)</pre
         </a>
       </nav>
     </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button class="lightbox__close" id="lightbox-close" aria-label="Close">&times;</button>
+      <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+    </div>
 
     <script src="js/main.js"></script>
   </body>
