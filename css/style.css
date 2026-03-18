@@ -711,6 +711,37 @@ section {
   color: #1a1a1a;
 }
 
+/* --- Inline media block (text + image side by side) --- */
+.cs-inline-media {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cs-inline-media__text {
+  flex: 0 1 60%;
+}
+
+.cs-inline-media__image {
+  flex: 0 0 40%;
+  width: 40%;
+  border-radius: 4px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .cs-inline-media {
+    flex-direction: column;
+  }
+
+  .cs-inline-media__image {
+    width: 100%;
+    flex: none;
+  }
+}
+
 /* --- Impact / Outcome List --- */
 .cs-impact-list {
   display: flex;
