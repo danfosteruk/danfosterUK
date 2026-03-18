@@ -64,8 +64,8 @@
           Building a Data Culture Inside L&amp;D
         </h1>
         <p class="cs-hero__lead fade-in fade-in-delay-1">
-          How I went from Excel pivot tables to machine learning &ndash; and why the
-          real achievement was changing how my team made decisions.
+          How I went from Excel pivot tables to machine learning &ndash; and why
+          the real achievement was changing how my team made decisions.
         </p>
         <p class="cs-hero__date fade-in fade-in-delay-2">
           <strong>Date:</strong> 2022&ndash;23
@@ -93,19 +93,22 @@
           Most L&amp;D teams measure learning through completion rates and
           post-course surveys. I wanted to know more.
         </p>
-        <p class="cs-section__text fade-in">
-          Over the course of a Level 4 Data Analyst apprenticeship, I designed
-          and delivered projects that gave my team something it had never had
-          before: a systematic, evidence-based view of how learning was
-          performing &ndash; and the automated tools to keep it updated.
-        </p>
         <div class="cs-inline-media fade-in">
-          <p class="cs-section__text cs-inline-media__text">
-            The technical progression was real, moving from Excel dashboards
-            through to Power BI, then Python and machine learning. But the bigger
-            shift was cultural. By the end, my team was making decisions
-            differently.
-          </p>
+          <div class="cs-inline-media__text">
+            <p class="cs-section__text">
+              Over the course of a Level 4 Data Analyst apprenticeship, I
+              designed and delivered projects that gave my team something it had
+              never had before: a systematic, evidence-based view of how
+              learning was performing &ndash; and the automated tools to keep it
+              updated.
+            </p>
+            <p class="cs-section__text">
+              The technical progression was real, moving from Excel dashboards
+              through to Tableau and Power BI, then onto Python and machine
+              learning. But the bigger shift was cultural. By the end, my team
+              was making decisions differently.
+            </p>
+          </div>
           <figure class="cs-inline-media__figure">
             <img
               class="cs-inline-media__image"
@@ -114,7 +117,8 @@
               loading="lazy"
             />
             <figcaption class="cs-inline-media__caption">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              A pairplot taken from a python project to analyse instructor-led
+              training ratings.
             </figcaption>
           </figure>
         </div>
@@ -158,8 +162,8 @@
             </p>
             <p class="cs-overview-card__text">
               Built in Excel with Power Pivot. Revealed that promotional
-              campaigns drove short-term spikes but not sustained engagement &ndash;
-              directly informing a commercial contract decision.
+              campaigns drove short-term spikes but not sustained engagement
+              &ndash; directly informing a commercial contract decision.
             </p>
           </div>
         </div>
@@ -205,15 +209,15 @@
                     organisational hierarchy into related dimension tables,
                     joined through primary and foreign keys. A DAX expression
                     categorised users into tenure bands, comparing engagement
-                    across employees who were 0&ndash;3 months, 3&ndash;12 months, 1&ndash;3
-                    years, and 3+ years in role.
+                    across employees who were 0&ndash;3 months, 3&ndash;12
+                    months, 1&ndash;3 years, and 3+ years in role.
                   </p>
                   <p class="accordion__step-text">
                     I built the interactive dashboard using Pivot Charts and
                     Slicers, designed around the domain context of L&amp;D
-                    stakeholders &ndash; with activity categories aggregated into
-                    seven audience-relevant groups rather than the fourteen raw
-                    categories in the source data.
+                    stakeholders &ndash; with activity categories aggregated
+                    into seven audience-relevant groups rather than the fourteen
+                    raw categories in the source data.
                   </p>
                 </div>
 
@@ -226,7 +230,8 @@
                     supplier represented less than 2%. In the 28 days following
                     a promotional campaign designed to boost engagement, the
                     five promoted courses saw a 584% uplift on the previous
-                    quarter's monthly average &ndash; seemingly impressive results.
+                    quarter's monthly average &ndash; seemingly impressive
+                    results.
                   </p>
                   <p class="accordion__step-text">
                     However, the data showed this spike was not sustained.
@@ -339,8 +344,8 @@
                     different results depending on which day of the week a
                     stakeholder opened the dashboard. I built a DAX calculated
                     column using the WEEKDAY function to always anchor the 7-day
-                    window to the previous Monday &ndash; ensuring consistent results
-                    regardless of when the dashboard was viewed.
+                    window to the previous Monday &ndash; ensuring consistent
+                    results regardless of when the dashboard was viewed.
                   </p>
                   <pre class="code-block">
 Adjusted Days = DATEDIFF([Rating Date], TODAY() - WEEKDAY(TODAY(),3), DAY)</pre
@@ -353,16 +358,16 @@ Adjusted Days = DATEDIFF([Rating Date], TODAY() - WEEKDAY(TODAY(),3), DAY)</pre
                   <p class="accordion__step-text">
                     5,448 ratings submitted, 760 comments, average rating 4.2/5.
                     The three highest-rated activities were all completed during
-                    new joiner onboarding &ndash; raising a hypothesis about whether
-                    newer employees rate more positively.
+                    new joiner onboarding &ndash; raising a hypothesis about
+                    whether newer employees rate more positively.
                   </p>
                   <p class="accordion__step-text">
                     Within weeks, the dashboard identified a course with an
                     average score of 1.3/5 after 25+ responses, just days after
                     launch. Verbatim comments identified three specific pain
                     points, which were shared with the supplier. An updated
-                    course was promptly released &ndash; this proved the catalyst for
-                    another portfolio project:
+                    course was promptly released &ndash; this proved the
+                    catalyst for another portfolio project:
                     <a href="project1.html">Regulatory Remedy.</a>
                   </p>
                 </div>
@@ -375,8 +380,8 @@ Adjusted Days = DATEDIFF([Rating Date], TODAY() - WEEKDAY(TODAY(),3), DAY)</pre
         <div class="cs-overview-cards fade-in">
           <div class="cs-overview-card">
             <p class="cs-overview-card__title">
-              Project 3: ILT Ratings &ndash; Does quality of materials predict learner
-              confidence?
+              Project 3: ILT Ratings &ndash; Does quality of materials predict
+              learner confidence?
             </p>
             <p class="cs-overview-card__subtitle">
               What actually drives learning effectiveness?
@@ -427,16 +432,17 @@ Adjusted Days = DATEDIFF([Rating Date], TODAY() - WEEKDAY(TODAY(),3), DAY)</pre
                   <p class="accordion__step-text">
                     Coding in Python, I loaded 1,852 learner feedback records
                     into a Pandas DataFrame in Jupyter Notebooks. Each record
-                    contained ratings from 0&ndash;5 for Confidence (in applying the
-                    learning), Delivery (trainer quality), and Materials
+                    contained ratings from 0&ndash;5 for Confidence (in applying
+                    the learning), Delivery (trainer quality), and Materials
                     quality.
                   </p>
                   <p class="accordion__step-text">
                     After removing Personally Identifiable Information (PII) and
-                    cleaning the data, I aggregated records by training group &ndash;
-                    each group representing one instance of training, delivered
-                    by one trainer, to one cohort. Groups with fewer than 5
-                    responses were excluded, leaving 131 aggregated records.
+                    cleaning the data, I aggregated records by training group
+                    &ndash; each group representing one instance of training,
+                    delivered by one trainer, to one cohort. Groups with fewer
+                    than 5 responses were excluded, leaving 131 aggregated
+                    records.
                   </p>
                 </div>
 
@@ -472,8 +478,8 @@ Adjusted Days = DATEDIFF([Rating Date], TODAY() - WEEKDAY(TODAY(),3), DAY)</pre
                   </p>
                   <p class="accordion__step-text">
                     Model validated using an 80/20 train/test split: Training
-                    Score 0.313, Testing Score 0.375 &ndash; close enough to confirm
-                    the model was not overfitting.
+                    Score 0.313, Testing Score 0.375 &ndash; close enough to
+                    confirm the model was not overfitting.
                   </p>
                 </div>
 
@@ -489,8 +495,8 @@ Adjusted Days = DATEDIFF([Rating Date], TODAY() - WEEKDAY(TODAY(),3), DAY)</pre
                   <p class="accordion__step-text">
                     But I presented the model's limitations honestly: subjective
                     end-of-session ratings have limited bearing on real-world
-                    performance. The analysis was always of limited value &ndash; and
-                    I said so.
+                    performance. The analysis was always of limited value
+                    &ndash; and I said so.
                   </p>
                   <p class="accordion__step-text">
                     The greater goal was to demonstrate what better data could
@@ -655,8 +661,16 @@ Adjusted Days = DATEDIFF([Rating Date], TODAY() - WEEKDAY(TODAY(),3), DAY)</pre
       </nav>
     </footer>
 
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
-      <button class="lightbox__close" id="lightbox-close" aria-label="Close">&times;</button>
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image viewer"
+    >
+      <button class="lightbox__close" id="lightbox-close" aria-label="Close">
+        &times;
+      </button>
       <img class="lightbox__img" id="lightbox-img" src="" alt="" />
     </div>
 
