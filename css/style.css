@@ -430,43 +430,16 @@ section {
   color: #fff;
 }
 
-/* --- Skills --- */
-.skills {
+/* --- About --- */
+.about {
   padding: 3rem 0;
 }
 
-.skills__intro {
+.about__intro {
   font-size: var(--font-size-body);
   color: #444;
   margin-bottom: 1.2rem;
   line-height: 1.7;
-}
-
-.skills__list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  margin-bottom: 0;
-}
-
-.skills__list li {
-  font-size: var(--font-size-body);
-  line-height: 1.65;
-  color: #444;
-  padding-left: 1.2em;
-  position: relative;
-}
-
-.skills__list li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #1a1a1a;
-  font-weight: bold;
-}
-
-.skills__list li strong {
-  color: #1a1a1a;
 }
 
 /* --- Experience --- */
