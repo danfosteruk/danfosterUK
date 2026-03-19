@@ -31,16 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = document.querySelector(targetId);
       if (target) {
         e.preventDefault();
-        const doScroll = () => {
-          if (targetId === '#contact') {
-            window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
-          } else {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        };
-        doScroll();
-        if (document.fonts.status !== 'loaded') {
-          document.fonts.ready.then(doScroll);
+        if (targetId === '#contact') {
+          window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+        } else {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       }
     });
