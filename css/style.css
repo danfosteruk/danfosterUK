@@ -1086,8 +1086,9 @@ pre.code-block {
   }
 
   .sticky-nav__links {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0;
     width: 100%;
   }
 
