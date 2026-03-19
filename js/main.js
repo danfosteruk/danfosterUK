@@ -31,9 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = document.querySelector(targetId);
       if (target) {
         e.preventDefault();
-        const offset = document.querySelector('.sticky-nav') ? 60 : 0;
-        const top = target.getBoundingClientRect().top + window.scrollY - offset;
-        window.scrollTo({ top, behavior: 'smooth' });
+        if (targetId === '#contact') {
+          window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+        } else {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       }
     });
   });
