@@ -714,6 +714,7 @@ section {
 
 .lightbox.is-open {
   display: flex;
+  flex-direction: column;
 }
 
 .lightbox__img {
@@ -738,6 +739,15 @@ section {
 
 .lightbox__close:hover {
   opacity: 1;
+}
+
+.lightbox__caption {
+  color: #ccc;
+  font-size: var(--font-size-caption);
+  text-align: center;
+  margin-top: 0.75rem;
+  line-height: 1.4;
+  max-width: 85vw;
 }
 
 @media (max-width: 768px) {

@@ -69,12 +69,16 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- Lightbox --- */
   const lightbox      = document.getElementById('lightbox');
   const lightboxImg   = document.getElementById('lightbox-img');
-  const lightboxClose = document.getElementById('lightbox-close');
+  const lightboxClose   = document.getElementById('lightbox-close');
+  const lightboxCaption = document.getElementById('lightbox-caption');
 
   if (lightbox) {
     function openLightbox(img) {
       lightboxImg.src = img.src;
       lightboxImg.alt = img.alt;
+      const figure = img.closest('figure');
+      const caption = figure ? figure.querySelector('figcaption') : null;
+      lightboxCaption.textContent = caption ? caption.textContent : '';
       lightbox.classList.add('is-open');
       document.body.style.overflow = 'hidden';
       lightboxClose.focus();
@@ -83,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function closeLightbox() {
       lightbox.classList.remove('is-open');
       lightboxImg.src = '';
+      lightboxCaption.textContent = '';
       document.body.style.overflow = '';
     }
 
