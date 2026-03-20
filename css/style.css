@@ -717,8 +717,8 @@ section {
 }
 
 .lightbox__img {
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: min(85vw, 100%);
+  max-height: min(85vh, 100%);
   object-fit: contain;
   border-radius: 4px;
 }
