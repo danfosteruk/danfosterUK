@@ -558,7 +558,7 @@ section {
 
 /* --- Case Study Hero --- */
 .cs-hero {
-  padding: 3rem 0 2rem;
+  padding: 3rem 0 0.5rem;
 }
 
 .cs-hero__back {
@@ -606,6 +606,8 @@ section {
 .cs-hero__date {
   font-size: var(--font-size-sm);
   color: #555;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
 }
 
 /* --- Case Study Media --- */
