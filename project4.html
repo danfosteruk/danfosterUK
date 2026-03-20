@@ -138,9 +138,22 @@
         <p class="cs-section__text fade-in">
           The user describes what they've been working on. Skill Surface listens, asks targeted questions, and helps identify which skills the user is demonstrating &ndash; and at what level.
         </p>
-        <p class="cs-section__text fade-in">
-          Sessions take about 15-20 minutes. No accounts, no database, no server-side storage. A little JavaScript magic powers a save-to-PDF feature. Otherwise, when a user closes their browser tab, their conversation is gone &ndash; because it was never stored in the first place. Privacy by design.
-        </p>
+        <div class="cs-inline-media fade-in">
+          <p class="cs-section__text cs-inline-media__text">
+            Sessions take about 15-20 minutes. No accounts, no database, no server-side storage. A little JavaScript magic powers a save-to-PDF feature. Otherwise, when a user closes their browser tab, their conversation is gone &ndash; because it was never stored in the first place. Privacy by design.
+          </p>
+          <figure class="cs-inline-media__figure">
+            <img
+              class="cs-inline-media__image"
+              src="images/skill-surface-screenshot.png"
+              alt="Skill Surface screenshot"
+              loading="lazy"
+            />
+            <figcaption class="cs-inline-media__caption">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -222,6 +235,21 @@
         </a>
       </nav>
     </footer>
+
+    <!-- Lightbox -->
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image viewer"
+    >
+      <button class="lightbox__close" id="lightbox-close" aria-label="Close">
+        &times;
+      </button>
+      <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+      <p class="lightbox__caption" id="lightbox-caption"></p>
+    </div>
 
     <script src="js/main.js"></script>
   </body>

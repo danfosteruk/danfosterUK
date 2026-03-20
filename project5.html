@@ -112,9 +112,22 @@
           low-quality webcam recordings. The result was that video &ndash; one of the most effective ways to share knowledge and connect with people &ndash; was either inaccessible or not worth the effort.
         </p>
 
-        <p class="cs-section__text fade-in">
-          I led an initiative to change that. Not by training people to become video producers, but by designing an environment where the technology got out of the way. The studio uses a touchscreen system that handles framing, recording, and basic editing in one interface. I created digital training guides accessible via QR code, so anyone could walk in, scan, and start recording within minutes. No technical background required.
-        </p>
+        <div class="cs-inline-media fade-in">
+          <p class="cs-section__text cs-inline-media__text">
+            I led an initiative to change that. Not by training people to become video producers, but by designing an environment where the technology got out of the way. The studio uses a touchscreen system that handles framing, recording, and basic editing in one interface. I created digital training guides accessible via QR code, so anyone could walk in, scan, and start recording within minutes. No technical background required.
+          </p>
+          <figure class="cs-inline-media__figure">
+            <img
+              class="cs-inline-media__image"
+              src="images/RapidMooc_Studio.png"
+              alt="RapidMooc Studio"
+              loading="lazy"
+            />
+            <figcaption class="cs-inline-media__caption">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -215,6 +228,21 @@
         </a>
       </nav>
     </footer>
+
+    <!-- Lightbox -->
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image viewer"
+    >
+      <button class="lightbox__close" id="lightbox-close" aria-label="Close">
+        &times;
+      </button>
+      <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+      <p class="lightbox__caption" id="lightbox-caption"></p>
+    </div>
 
     <script src="js/main.js"></script>
   </body>
