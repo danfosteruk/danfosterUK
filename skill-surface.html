@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Voice - Dan Foster</title>
+    <title>Skill Surface - Dan Foster</title>
     <meta
       name="description"
-      content="How I put professional video production capability in the hands of colleagues across the business - no technical expertise required."
+      content="The skills that make you most effective at work are often the ones you've stopped noticing. I designed and built an AI-powered conversational coaching tool to fix that - one conversation at a time."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +20,7 @@
     <meta property="og:title" content="Dan Foster | Transforming Workplace Learning | Portfolio">
     <meta property="og:description" content="Engaging, evidence-based learning experiences. Built on data; designed to change behaviour.">
     <meta property="og:image" content="https://danfosteruk.github.io/danfosterUK/images/danfosterukOG.png">
-    <meta property="og:url" content="https://danfoster.uk/project5.html">
+    <meta property="og:url" content="https://danfoster.uk/skill-surface.html">
     <meta property="og:type" content="website">
 
   </head>
@@ -68,71 +68,100 @@
           </svg>
           Go back
         </a>
-        <h1 class="cs-hero__title fade-in">Your Voice</h1>
+        <h1 class="cs-hero__title fade-in">Skill Surface</h1>
         <p class="cs-hero__subtitle fade-in fade-in-delay-1">
-          Enabling knowledge sharing and amplifying colleague voices through
-          user-generated content.
+          Making hidden skills visible
         </p>
         <p class="cs-hero__lead fade-in fade-in-delay-2">
-          How I put professional video production capability in the hands of
-          colleagues across the business - no technical expertise required.
+          The skills that make you most effective at work are often the ones you've stopped noticing. I designed and built an AI-powered conversational coaching tool to fix that - one conversation at a time.
         </p>
         <p class="cs-hero__date fade-in fade-in-delay-2">
-          <strong>Date:</strong> 2024-25
+          <strong>Date:</strong> 2026
         </p>
         <p class="cs-hero__date fade-in fade-in-delay-2">
-          <strong>Skills and technologies: </strong>RapidMooc Pro+ &middot; Learning Glass &middot; Video by Blackmagic Design &middot; Audio by AKG and Audient
+          <strong>Skills and technologies: </strong>Product Design &middot; Claude API &middot; VS Code &middot; GitHub &middot; HTML/CSS/JavaScript 
+        </p>
+        <p class="cs-hero__date fade-in fade-in-delay-2">
+          <strong>Website: </strong><a href="https://www.skill-surface.com" target="_blank"><u>skill-surface.com</u></a>
         </p>
       </div>
     </section>
 
-    <!-- Video -->
+    <!-- Image -->
     <section class="cs-media">
       <div class="container">
-        <div class="cs-media__video-wrapper fade-in">
-          <iframe
-            src="https://www.youtube.com/embed/u38e-zIi9Go?rel=0"
-            title="Your Voice"
-            allow="
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture;
-            "
-            allowfullscreen
-            loading="lazy"
-          ></iframe>
-        </div>
+        <img
+          src="images/Skill_Surface.png"
+          alt=""
+          class="cs-media__image fade-in"
+        />
       </div>
     </section>
 
     <hr class="divider" />
 
-    <!-- The problem -->
+    <!-- The Invisibility Problem -->
     <section class="cs-section">
       <div class="container">
-        <h2 class="cs-section__heading fade-in">The problem</h2>
+        <h2 class="cs-section__heading fade-in">The invisibility problem</h2>
+        <p class="cs-section__text fade-in">
+          The better you get at something, the less conscious effort it requires. When something feels effortless, we assume it's easy. We assume everyone can do it. So we don't name it, don't claim it, and definitely don't put it on a CV.
+        </p>
+        <p class="cs-section__text fade-in">
+          If you can't see a skill, you can't develop it deliberately. You can't explain it in an interview, or teach it to someone else.</p>
+        <p class="cs-section__text fade-in">
+          I wanted to build something that could close that gap. Something conversational - a tool that could surface skills through the kind of questioning a good coach would use.
+        </p>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Designing the Conversation -->
+    <section class="cs-section">
+      <div class="container">
+        <h2 class="cs-section__heading fade-in">Designing the Conversation</h2>
+        <p class="cs-section__text fade-in">
+          I needed a foundation that would hold up in real conversations. I chose a coaching model as the conversational backbone, combined with a skills taxonomy and competency model to create an assessment framework. These are fed into a Large Language Model (LLM) to create a natural, non-linear chat experience.
+        </p>
+        <p class="cs-section__text fade-in">
+          <strong>The taxonomy had to work beyond office-based knowledge workers.</strong> A mechanic diagnosing an intermittent fault and a project manager navigating stakeholder conflict are both demonstrating expertise. The taxonomy covers dozens of skills across categories from Craft & Technical Mastery, through to Safety & Compliance, Communication, and Strategic Thinking.
+        </p>
+        <p class="cs-section__text fade-in">
+          <strong>I built in two modes for two contexts.</strong> “Self” mode is for personal reflection - talking through your own experience. “Coach” mode is for someone helping another person develop. It's the same engine with a different entry point.
+        </p>
+        <p class="cs-section__text fade-in">
+          <strong>I let conversations breathe.</strong> Early versions imposed a fixed structure. I replaced that with a checkpoint system - after each meaningful exchange, the user decides whether to continue or stop. A user might start talking about communication and end up surfacing leadership skills. That's the coach working as intended.
+        </p>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- What I Built -->
+    <section class="cs-section">
+      <div class="container">
+        <h2 class="cs-section__heading fade-in">What I Built</h2>
 
         <p class="cs-section__text fade-in">
-          Before the Learning Experience Studio was commissioned, video production meant joining a long queue for my company's London-based design team, or settling for
-          low-quality webcam recordings. The result was that video - one of the most effective ways to connect with people - was either inaccessible or not worth the effort.
+          Skill Surface is a deployed web application powered by Anthropic's Claude API. It began life as a Custom GPT and has been through two major (and many, <em>many</em> minor) iterations to reach its current form.
         </p>
-
+        <p class="cs-section__text fade-in">
+          The user describes what they've been working on. Skill Surface listens, asks targeted questions, and helps identify which skills the user is demonstrating - and at what level.
+        </p>
         <div class="cs-inline-media fade-in">
           <p class="cs-section__text cs-inline-media__text">
-            I led an initiative to change that. Not by training people to become video producers, but by designing an environment where the technology got out of the way. The studio uses a touchscreen system that handles framing, recording, and basic editing in one interface. I created digital training guides accessible via QR code, so anyone could walk in, scan, and start recording within minutes. No technical background required.
+            Sessions take about 15-20 minutes. No accounts, no database, no server-side storage. A little JavaScript magic powers a save-to-PDF feature. Otherwise, when a user closes their browser tab, their conversation is gone - because it was never stored in the first place. Privacy by design.
           </p>
           <figure class="cs-inline-media__figure">
             <img
               class="cs-inline-media__image"
-              src="images/RapidMooc_Studio.png"
-              alt="RapidMooc Studio"
+              src="images/skill-surface-screenshot.png"
+              alt="Skill Surface screenshot"
               loading="lazy"
             />
             <figcaption class="cs-inline-media__caption">
-              RapidMooc Pro+ is an all-in-one video production system.
+              Skill Surface encourages active reflection through a simple chat interface.
             </figcaption>
           </figure>
         </div>
@@ -141,37 +170,18 @@
 
     <hr class="divider" />
 
-    <!-- What it made possible -->
+    <!-- What I Learned -->
     <section class="cs-section">
       <div class="container">
-        <h2 class="cs-section__heading fade-in">What it made possible</h2>
-
+        <h2 class="cs-section__heading fade-in">What I Learned</h2>
         <p class="cs-section__text fade-in">
-          The studio removed a bottleneck that had been slowing teams across the business. Health and safety training for our vehicle repair network - previously dependent on an instructor travelling to each site - could now be created as professional on-demand video, reducing delivery costs and reaching a population that had previously been difficult to serve. Teams who had never considered creating their own learning content were recording, editing, and publishing independently. The L&amp;D team stopped being the gatekeeper and started supporting teams to create their own content.
+          Early versions of Skill Surface tried to keep conversations on a fixed track. It made the experience worse. But without any structure at all, sessions drifted - 90 minutes of interesting chat that never quite resolved into anything useful. The version that works is the one that holds just enough structure to be productive, but leaves enough space for genuine reflection to happen.
         </p>
-      </div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- What I didn't expect -->
-    <section class="cs-section">
-      <div class="container">
-        <h2 class="cs-section__heading fade-in">What I didn't expect</h2>
-
         <p class="cs-section__text fade-in">
-          The most meaningful content to come out of the studio had nothing to do with training. Partnering with the Diversity Trust, the studio became a space for colleagues to share their own stories - LGBTQ+ experiences, faith, family, caring responsibilities. These weren't polished corporate messages, but became some of the most powerful material we created.
+          The first skills taxonomy I wrote felt comprehensive. It wasn't. It was built around office-based knowledge work because that's what I knew. It took several rounds of testing against very different roles to expose the gaps - and each revision surfaced new ones. I don't consider any version final now, just the most recently tested.
         </p>
-
         <p class="cs-section__text fade-in">
-          The studio also captured content from our Talent Acquisition team and
-          members of the Neurodiversity &amp; Disability Employee Community for
-          <em>Recruitment Ready</em> - a project that went on to win Gold for Best Internal Learning Solution at the 2026 LPI Awards.
-        </p>
-
-        <p class="cs-section__text fade-in">
-          When you give people the right platform and make it easy to use,
-          they share the things that matter.
+          The first step isn't learning something new, it's recognising what you already know.
         </p>
       </div>
     </section>

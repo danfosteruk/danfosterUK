@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skill Surface - Dan Foster</title>
+    <title>Does Our Training Actually Work? - Dan Foster</title>
     <meta
       name="description"
-      content="The skills that make you most effective at work are often the ones you've stopped noticing. I designed and built an AI-powered conversational coaching tool to fix that - one conversation at a time."
+      content="How I joined nine datasets from three enterprise systems, analysed 1.2 million records, and connected learning interventions to employee performance for the first time."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +20,7 @@
     <meta property="og:title" content="Dan Foster | Transforming Workplace Learning | Portfolio">
     <meta property="og:description" content="Engaging, evidence-based learning experiences. Built on data; designed to change behaviour.">
     <meta property="og:image" content="https://danfosteruk.github.io/danfosterUK/images/danfosterukOG.png">
-    <meta property="og:url" content="https://danfoster.uk/project4.html">
+    <meta property="og:url" content="https://danfoster.uk/training-evaluation.html">
     <meta property="og:type" content="website">
 
   </head>
@@ -68,21 +68,20 @@
           </svg>
           Go back
         </a>
-        <h1 class="cs-hero__title fade-in">Skill Surface</h1>
+        <h1 class="cs-hero__title fade-in">Does Our Training Actually Work?</h1>
         <p class="cs-hero__subtitle fade-in fade-in-delay-1">
-          Making hidden skills visible
+          Connecting learning to performance.
         </p>
         <p class="cs-hero__lead fade-in fade-in-delay-2">
-          The skills that make you most effective at work are often the ones you've stopped noticing. I designed and built an AI-powered conversational coaching tool to fix that - one conversation at a time.
+          How I joined nine datasets from three enterprise systems, analysed 1.2
+          million records, and connected learning interventions to employee
+          performance for the first time.
         </p>
         <p class="cs-hero__date fade-in fade-in-delay-2">
-          <strong>Date:</strong> 2026
+          <strong>Date:</strong> 2023
         </p>
         <p class="cs-hero__date fade-in fade-in-delay-2">
-          <strong>Skills and technologies: </strong>Product Design &middot; Claude API &middot; VS Code &middot; GitHub &middot; HTML/CSS/JavaScript 
-        </p>
-        <p class="cs-hero__date fade-in fade-in-delay-2">
-          <strong>Website: </strong><a href="https://www.skill-surface.com" target="_blank"><u>skill-surface.com</u></a>
+          <strong>Skills and technologies: </strong>Data Engineering &middot; Statistical Analysis &middot; Machine Learning (Regression Modelling) &middot; Python: pandas, scikit-learn, matplotlib, seaborn
         </p>
       </div>
     </section>
@@ -91,8 +90,8 @@
     <section class="cs-media">
       <div class="container">
         <img
-          src="images/Skill_Surface.png"
-          alt=""
+          src="images/Does_Our_Training_Actually_Work.png"
+          alt="Does Our Training Actually Work?"
           class="cs-media__image fade-in"
         />
       </div>
@@ -100,68 +99,111 @@
 
     <hr class="divider" />
 
-    <!-- The Invisibility Problem -->
+    <!-- Intro -->
     <section class="cs-section">
       <div class="container">
-        <h2 class="cs-section__heading fade-in">The invisibility problem</h2>
         <p class="cs-section__text fade-in">
-          The better you get at something, the less conscious effort it requires. When something feels effortless, we assume it's easy. We assume everyone can do it. So we don't name it, don't claim it, and definitely don't put it on a CV.
+          For years, the Learning &amp; Development team evaluated training
+          through engagement rates and user feedback. Both have value, but they can't tell you whether the training changed anything.
         </p>
         <p class="cs-section__text fade-in">
-          If you can't see a skill, you can't develop it deliberately. You can't explain it in an interview, or teach it to someone else.</p>
-        <p class="cs-section__text fade-in">
-          I wanted to build something that could close that gap. Something conversational - a tool that could surface skills through the kind of questioning a good coach would use.
+          For my final Level 4 Data Analyst Apprenticeship project, I set out to
+          answer the question properly. That meant accessing data that my L&amp;D
+          team had never touched, building relationships across HR, operations, and
+          data teams, and engineering a dataset complex enough to track
+          individual employees from their first week through to twelve months in
+          role.
         </p>
       </div>
     </section>
 
     <hr class="divider" />
 
-    <!-- Designing the Conversation -->
+    <!-- The Problem -->
     <section class="cs-section">
       <div class="container">
-        <h2 class="cs-section__heading fade-in">Designing the Conversation</h2>
+        <h2 class="cs-section__heading fade-in">The Problem</h2>
         <p class="cs-section__text fade-in">
-          I needed a foundation that would hold up in real conversations. I chose a coaching model as the conversational backbone, combined with a skills taxonomy and competency model to create an assessment framework. These are fed into a Large Language Model (LLM) to create a natural, non-linear chat experience.
+          My organisation ran a structured induction programme for all new motor
+          insurance retention consultants. These employees are critical to the
+          business. Marginal improvements in their performance translate
+          directly to revenue.
         </p>
         <p class="cs-section__text fade-in">
-          <strong>The taxonomy had to work beyond office-based knowledge workers.</strong> A mechanic diagnosing an intermittent fault and a project manager navigating stakeholder conflict are both demonstrating expertise. The taxonomy covers dozens of skills across categories from Craft & Technical Mastery, through to Safety & Compliance, Communication, and Strategic Thinking.
+          Despite this, nobody had properly looked at how the induction
+          programme was working. Not because the data didn't exist, but because
+          it lived across three separate enterprise systems that L&amp;D had no
+          access to, no relationships with, and no framework for joining.
         </p>
         <p class="cs-section__text fade-in">
-          <strong>I built in two modes for two contexts.</strong> “Self” mode is for personal reflection - talking through your own experience. “Coach” mode is for someone helping another person develop. It's the same engine with a different entry point.
-        </p>
-        <p class="cs-section__text fade-in">
-          <strong>I let conversations breathe.</strong> Early versions imposed a fixed structure. I replaced that with a checkpoint system - after each meaningful exchange, the user decides whether to continue or stop. A user might start talking about communication and end up surfacing leadership skills. That's the coach working as intended.
+          The hypothesis was simple:
+          <em
+            >if we can benchmark new inductee performance against experienced
+            staff, and track how that gap closes over time, we can make targeted
+            decisions about training content, timing, and sequencing.</em
+          >
         </p>
       </div>
     </section>
 
     <hr class="divider" />
 
-    <!-- What I Built -->
+    <!-- What I Did -->
     <section class="cs-section">
       <div class="container">
-        <h2 class="cs-section__heading fade-in">What I Built</h2>
+        <h2 class="cs-section__heading fade-in">What I Did</h2>
 
         <p class="cs-section__text fade-in">
-          Skill Surface is a deployed web application powered by Anthropic's Claude API. It began life as a Custom GPT and has been through two major (and many, <em>many</em> minor) iterations to reach its current form.
+          <strong>Data sourcing and access:</strong> I worked with the Motor
+          Performance team to gain access to trading reports held on our AWS
+          cloud data warehouse - data that L&amp;D had never accessed
+          before. I identified nine source files across three systems (our HRIS,
+          LMS, and trading platform), totalling over 1.2 million records.
         </p>
+
         <p class="cs-section__text fade-in">
-          The user describes what they've been working on. Skill Surface listens, asks targeted questions, and helps identify which skills the user is demonstrating - and at what level.
+          <strong>The analysis, in brief:</strong> After an extensive data
+          engineering phase, I conducted an exploratory analysis of KPIs -
+          call volumes, retention rates, renewals, customer feedback, and
+          quality assurance scores - across four employee populations: new
+          inductees, existing staff, offshore contractors, and onshore
+          contractors. I then categorised employees into four tenure bands,
+          analysing performance and building linear regression models to predict
+          retention rates. Then I investigated the relationship between
+          cross-skill training and performance uplift.
         </p>
+
+        <p class="cs-section__text fade-in">
+          <strong>The recommendation:</strong> New inductee performance was
+          broadly comparable to experienced staff on most KPIs at around four to
+          six months.
+        </p>
+
         <div class="cs-inline-media fade-in">
-          <p class="cs-section__text cs-inline-media__text">
-            Sessions take about 15-20 minutes. No accounts, no database, no server-side storage. A little JavaScript magic powers a save-to-PDF feature. Otherwise, when a user closes their browser tab, their conversation is gone - because it was never stored in the first place. Privacy by design.
-          </p>
+          <div class="cs-inline-media__text">
+            <p class="cs-section__text">
+              Call-to-save - the most commercially significant metric
+              - takes longer, and the data suggests the turning point
+              coincides with a cross-skill training programme typically
+              delivered at six months.
+            </p>
+            <p class="cs-section__text">
+              So, does our training work? Yes - but I believed we could make
+              it better. My recommendation: pilot bringing elements of the
+              cross-training forward. Measure the results against the benchmarks
+              established here, and use A/B testing to validate the impact.
+            </p>
+          </div>
           <figure class="cs-inline-media__figure">
             <img
               class="cs-inline-media__image"
-              src="images/skill-surface-screenshot.png"
-              alt="Skill Surface screenshot"
+              src="images/cross-skill_c2s.png"
+              alt="Cross-skill call-to-save analysis"
               loading="lazy"
             />
             <figcaption class="cs-inline-media__caption">
-              Skill Surface encourages active reflection through a simple chat interface.
+              Line chart showing new inductee call-to-save rates before and
+              after cross-skilling.
             </figcaption>
           </figure>
         </div>
@@ -170,19 +212,51 @@
 
     <hr class="divider" />
 
-    <!-- What I Learned -->
+    <!-- Outcome -->
     <section class="cs-section">
       <div class="container">
-        <h2 class="cs-section__heading fade-in">What I Learned</h2>
-        <p class="cs-section__text fade-in">
-          Early versions of Skill Surface tried to keep conversations on a fixed track. It made the experience worse. But without any structure at all, sessions drifted - 90 minutes of interesting chat that never quite resolved into anything useful. The version that works is the one that holds just enough structure to be productive, but leaves enough space for genuine reflection to happen.
-        </p>
-        <p class="cs-section__text fade-in">
-          The first skills taxonomy I wrote felt comprehensive. It wasn't. It was built around office-based knowledge work because that's what I knew. It took several rounds of testing against very different roles to expose the gaps - and each revision surfaced new ones. I don't consider any version final now, just the most recently tested.
-        </p>
-        <p class="cs-section__text fade-in">
-          The first step isn't learning something new, it's recognising what you already know.
-        </p>
+        <h2 class="cs-section__heading fade-in">The Outcome</h2>
+        <ul class="cs-impact-list">
+          <li class="fade-in">
+            First data-driven benchmark of learner performance following new
+            inductee training.
+          </li>
+          <li class="fade-in">
+            Evidence that most contact centre KPIs are comparable between
+            inductees and experienced staff at 4-6 months.
+          </li>
+          <li class="fade-in">
+            Identification of call-to-save as a lagging metric, and a
+            training-based hypothesis for why.
+          </li>
+          <li class="fade-in">
+            A specific, testable recommendation: pilot earlier delivery of
+            cross-skill training and A/B test.
+          </li>
+          <li class="fade-in">
+            A leadership team newly committed to data-driven learning design.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Testimonial -->
+    <section class="cs-section">
+      <div class="container">
+        <h2 class="cs-section__heading fade-in">Testimonial</h2>
+
+        <div class="cs-testimonial fade-in">
+          <p class="cs-testimonial__quote">
+            "The insight we're seeing from your work is adding so much value to
+            how we consider training moving forwards. You have an ability to
+            draw out data comparisons I wouldn't have even thought of."
+          </p>
+          <p class="cs-testimonial__author">
+            - Anne-Marie Edwards, Learning &amp; Development Manager
+          </p>
+        </div>
       </div>
     </section>
 
@@ -247,7 +321,6 @@
       </nav>
     </footer>
 
-    <!-- Lightbox -->
     <div
       class="lightbox"
       id="lightbox"
