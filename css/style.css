@@ -316,6 +316,7 @@ section {
 
 .project-card {
   margin-bottom: 3.5rem;
+  scroll-margin-top: 16px;
 }
 
 .project-card:last-child {
